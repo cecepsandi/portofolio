@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <style>
+/* ========== RESET DAN DASAR ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ========== HEADER ========== */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #161b22, #0d1117);
+    border-bottom: 2px solid #30363d;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #8b949e;
+    margin-top: 10px;
+}
+
+header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 3px solid #58a6ff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== SECTION ========== */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #21262d;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #58a6ff;
+    margin-bottom: 30px;
+}
+
+/* ========== ABOUT SECTION ========== */
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ========== SKILLS SECTION ========== */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#skills li {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+/* ========== PROJECTS SECTION ========== */
+#projects .project {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(88, 166, 255, 0.2);
+}
+
+#projects h3 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    color: #c9d1d9;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cecep Sandi Sandika</h1>
+            <p>Web Developer | Freelancer</p>
+        </div>
+        <img src="cesan.jpg">
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>belum di isi</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="project">
+                <h3>Nama Proyek 1</h3>
+                <p>Kepo</p>
+                
+            </div>
+            <div class="project">
+                <h3>Nama Proyek 2</h3>
+                <p>kepo</p>
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cecep Sandi Sandika. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
